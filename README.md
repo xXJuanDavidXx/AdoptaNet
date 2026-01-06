@@ -47,7 +47,7 @@ VITE_API_URL=http://localhost:8000
 Una vez que tengas el archivo `.env` listo, abre una terminal en la raíz del proyecto y ejecuta el siguiente comando:
 
 ```bash
-docker-compose -f despliegue/docker-compose.yml --env-file .env up --build -d
+cd despliegue && docker compose up 
 ```
 
 Este comando construirá las imágenes de Docker para el frontend y el backend, iniciará los contenedores y los dejará corriendo en segundo plano (`-d`).
