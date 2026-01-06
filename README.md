@@ -50,7 +50,7 @@ Una vez que tengas el archivo `.env` listo, abre una terminal en la raíz del pr
 cd despliegue && docker compose up 
 ```
 
-Este comando construirá las imágenes de Docker para el frontend y el backend, iniciará los contenedores y los dejará corriendo en segundo plano (`-d`).
+Este comando construirá las imágenes de Docker para el frontend y el backend, iniciará los contenedores y los dejará corriendo en para que sea en segundo plano agregar la flag (`-d`).
 
 ¡Y listo!
 - El **frontend** estará accesible en `http://localhost:5173`
@@ -61,7 +61,7 @@ Este comando construirá las imágenes de Docker para el frontend y el backend, 
 Para detener todos los servicios, puedes usar el siguiente comando en la terminal:
 
 ```bash
-docker-compose -f despliegue/docker-compose.yml down
+docker compose down
 ```
 
 
